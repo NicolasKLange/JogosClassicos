@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🎯 Jogo da Forca</h1>
+        <div class="dica" id="dica"></div>
+
+        <div class="progresso" id="progresso"></div>
+
+        <div id="erros">Erros: 0/5</div>
+        <div id="letrasErradas">Letras erradas: </div>
+
+        <div class="input-group">
+            <input type="text" id="letraInput" maxlength="1" />
+            <button onclick="enviarLetra()">Enviar</button>
+            <button onclick="reiniciarJogo()">🔄 Reiniciar</button>
+            
+        </div>
+
+        
+            <button class="voltar" onclick="window.location.href='/TelaPrincipal/index.html'">Voltar</button>
+       
+
+
+        <div id="mensagemFinal"></div>
+    </div>
+
+    <script src="palavras.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

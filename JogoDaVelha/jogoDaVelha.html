@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jogos Clássicos</title>
+  <link rel="stylesheet" href="/JogoDaVelha/style.css" />
+</head>
+<body>
+  
+
+  <main id="jogo-da-velha" class="oculto">
+    <h1>Jogo da Velha</h1>
+
+    <div class="placar">
+      <div><strong>Vitórias X:</strong> <span id="contador-x">0</span></div>
+      <div><strong>Jogador atual:</strong> <span id="jogador-selecionado"></span></div>
+      <div><strong>Vitórias O:</strong> <span id="contador-o">0</span></div>
+    </div>
+
+    <section id="tabuleiro" class="tabuleiro"></section>
+
+    <section class="info">
+      <p><strong>Vencedor:</strong> <span id="vencedor-selecionado"></span></p>
+    </section>
+
+    <button onclick="zerarVitorias()">Zerar Vitórias</button>
+    <button class="voltar" onclick="window.location.href='/TelaPrincipal/index.html'">Voltar</button>
+
+  </main>
+
+  <script src="/JogoDaVelha/jogoDaVelha.js"></script>
+</body>
+</html>

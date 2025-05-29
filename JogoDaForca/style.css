@@ -1,0 +1,134 @@
+/* style.css */
+
+/* Fonte serifada clássica */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #a97458, #d8c3a5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #3e2c23;
+}
+
+.container {
+    background-color: #f5f0e1;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(100, 60, 40, 0.5);
+    text-align: center;
+    border: 4px solid #a97458;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: clamp(24px, 6vw, 32px);
+    color: #5e4630;
+    text-shadow: 1px 1px 0 #d8c3a5;
+}
+
+.dica {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #5e4630;
+}
+
+.progresso {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.letra {
+    border-bottom: 2px solid #5e4630;
+    width: 30px;
+    height: 40px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e2c23;
+}
+
+.input-group {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 2px solid #a97458;
+    border-radius: 8px;
+    background-color: #f5f0e1;
+    color: #3e2c23;
+}
+
+button {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #a97458;
+    color: #f5f0e1;
+    border: 2px solid #5e4630;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 2px 2px 5px rgba(60, 40, 20, 0.3);
+}
+
+button:hover {
+    background-color: #5e4630;
+    transform: scale(1.05);
+}
+
+#mensagemFinal {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5e4630;
+}
+
+#erros, #letrasErradas {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #5e4630;
+}
+
+@media (max-width: 480px) {
+    .letra {
+        width: 24px;
+        height: 36px;
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        width: 40px;
+    }
+}
+
+button.voltar {
+  margin-top: 10px;
+  background: #d8c3a5;
+  color: #5e4630;
+}
+
+button.voltar:hover {
+  background: #bfa897;
+}
