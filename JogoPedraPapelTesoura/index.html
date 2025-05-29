@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedra, Papel e Tesoura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pedra, Papel e Tesoura</h1>
+    <p>Escolha uma opção:</p>
+
+    <div class="botoes">
+      <div class="opcao" data-opcao="PEDRA">✊</div>
+      <div class="opcao" data-opcao="PAPEL">📄</div>
+      <div class="opcao" data-opcao="TESOURA">✂️</div>
+    </div>
+
+    <div class="escolhas">
+      <div>
+        <h2>Você:</h2>
+        <div id="escolhaUsuario">❓</div>
+      </div>
+      <div>
+        <h2>Máquina:</h2>
+        <div id="escolhaMaquina">❓</div>
+      </div>
+    </div>
+
+    <div id="resultado"></div>
+    <button class="voltar" onclick="window.location.href='/TelaPrincipal/index.html'">Voltar</button>
+  </div>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
